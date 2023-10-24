@@ -45,9 +45,7 @@ const Forms = () => {
                   placeholder="Ваше имя"
                   value=""
                 />
-                {/* <p class="need">Требуется</p> */}
                 <div class=" react-tel-input ">
-                  {/* <div class="special-label">Phone</div> */}
                   <input
                     class="form-control "
                     placeholder="+998 (__) ___-__-__"

@@ -44,6 +44,7 @@ export const AboutStyle = styled.div`
       }
     }
 
+    
     & .brand {
       color: #02324a;
       text-align: center;
