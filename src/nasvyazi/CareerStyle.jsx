@@ -6,6 +6,7 @@ export const CareerStyle = styled.div`
     padding-top: 93px;
 
     & .link {
+      padding-left: 10px;
       & a {
         color: #7c8b9f;
         font-family: Geologica-Light, sans-serif;
