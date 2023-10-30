@@ -5,6 +5,7 @@ export const ServiceStyle = styled.div`
     max-width: 1210px;
     padding-top: 93px;
     & .link {
+      padding-left: 10px;
       & a {
         color: #7c8b9f;
         font-family: Geologica-Light, sans-serif;
@@ -47,7 +48,5 @@ export const ServiceStyle = styled.div`
       line-height: normal;
       padding-top: 35px;
     }
-
-    
   }
 `;

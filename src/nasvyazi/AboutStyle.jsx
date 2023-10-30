@@ -5,6 +5,7 @@ export const AboutStyle = styled.div`
     max-width: 1210px;
     padding-top: 93px;
     & .link {
+      padding-left: 10px;
       & a {
         color: #7c8b9f;
         font-family: Geologica-Light, sans-serif;
@@ -44,7 +45,6 @@ export const AboutStyle = styled.div`
       }
     }
 
-    
     & .brand {
       color: #02324a;
       text-align: center;
@@ -55,5 +55,4 @@ export const AboutStyle = styled.div`
       line-height: normal;
     }
   }
-
 `;
