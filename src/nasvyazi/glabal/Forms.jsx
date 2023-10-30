@@ -34,9 +34,7 @@ const Forms = () => {
             </div>
           </div>
           <div className="columnBox_to">
-            <p class="a1">
-              Заполните форму
-              </p>
+            <p class="a1">Заполните форму</p>
             <form>
               <div className="a2">
                 <input
@@ -66,9 +64,7 @@ const Forms = () => {
                     </div>
                   </div>
                 </div>
-                {/* <p class="need">Требуется</p> */}
                 <textarea name="comment" placeholder="Комментарий"></textarea>
-                {/* <p class="need">Требуется</p> */}
               </div>
               <div class="btnmain"></div>
 

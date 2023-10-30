@@ -75,7 +75,7 @@ export const FormsStyle = styled.div`
             color: rgb(2, 50, 74);
             display: flex;
             align-items: center;
-            text-decoration: none; 
+            text-decoration: none;
             & img {
               margin-right: 12px;
             }
@@ -171,6 +171,7 @@ export const FormsStyle = styled.div`
             font-style: normal;
             font-weight: 200;
             line-height: normal;
+            resize: none !important;
             @media (max-width: 610px) {
               width: 245px;
               @media (max-width: 370px) {
