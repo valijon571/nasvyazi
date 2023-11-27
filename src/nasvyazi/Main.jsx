@@ -8,12 +8,40 @@ import Accordion from "./glabal/Accordion";
 import Rectangle from "./glabal/Rectangle";
 
 import { Link } from "react-router-dom";
+import axios from "axios";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 
 const Main = () => {
+  const dispatch = useDispatch();
+  const { reviews, profile } = useSelector((s) => s);
+
+  useEffect(() => {
+    getReviews();
+  }, []);
+  const getReviews = () => {
+    axios
+      .get("https://api.onlinedu.uz/api/v1/reviews")
+      .then((r) => {
+        dispatch({
+          type: "SET_REVIEWS",
+          payload: r?.data ?? [],
+        });
+      })
+      .catch((e) => {})
+      .finally(() => {});
+  };
   return (
     <>
       <MainStyle>
         <Hedr />
+        <div>
+          {reviews?.map((item, index) => (
+            <div key={index}>
+              <h3>{item?.name}</h3>
+            </div>
+          ))}
+        </div>
         <div className="contaner">
           <div id="comp" className="fott_on"></div>
           <div className="fott">
